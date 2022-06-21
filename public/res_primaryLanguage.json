@@ -1,0 +1,118 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description":"I have worked in Java, Javascript and Python aswell as Node.js and Django Framework and other Frameworks  like React.js, PHP. \n\n My field of Interest's are building new Web Technologies and Products and also in areas related to Fullstack   Development.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "Investor Tracker",
+        "startDate": "2021",
+        "description": "Creating a web application to React js where any user could make save their current crypto and stock investments and it would tell him the current price and also calculate the profit/loss from the recent price and the information.",
+        "images": [
+          "images/portfolio/investortracker/p1.jpg",
+          "images/portfolio/investortracker/p2.jpg"
+        ],
+        "github": "https://github.com/NihalKPatel/InvestorTracker",
+        "technologies": [
+          {
+            "class": "devicon-react-plain",
+            "name": "React"
+          },
+          {
+            "class": "devicon-nodejs-plain",
+            "name": "NodeJS"
+          }
+        ]
+      },
+      {
+        "title": "Deal Finder",
+        "startDate": "2021",
+        "description": "Worked in a group to create a web application in Django where a user could search up any product and it would tell the user the cheapest place to go buy it. ",
+        "images": [
+          "images/portfolio/dealfinder/p1.jpg",
+          "images/portfolio/dealfinder/p2.jpg"
+        ],
+        "github": "https://github.com/NihalKPatel/Deal-Finder",
+        "technologies": [
+          {
+            "class": "devicon-django-plain",
+            "name": "Django"
+          },
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-sqlite-plain",
+            "name": "SQLite"
+          }
+        ]
+      },
+      {
+        "title": "3D Object Viewer",
+        "startDate": "2015",
+        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "images": [
+          "images/portfolio/adventure/p1.jpg",
+          "images/portfolio/adventure/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-mysql-plain",
+            "name": "MySQL"
+          },
+          {
+            "class": "devicon-nodejs-plain",
+            "name": "NodeJs"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "DefOpenSource",
+        "title": "Front-End Developer",
+        "years": "10.2019 - present",
+        "mainTech": [
+          "Angular 8/9/10"
+        ],
+        "technologies": [
+          "REST API",
+          "RxJS",
+          "JavaScript",
+          "Bootstrap",
+          "MDBootstrap",
+          "EF Core",
+          ".NET Core",
+          "SignalR",
+          "Angular Material"
+        ]
+      },
+      {
+        "company": "Serros Solutions",
+        "title": "Intern",
+        "years": "01.2018 - 09.2019",
+        "mainTech": [
+          "Angular 7/8"
+        ],
+        "technologies": [
+          "RxJS",
+          "Django",
+          "PHP",
+          "JavaScript",
+          "DHTMLX Gantt"
+        ]
+      }
+    ]
+  }
