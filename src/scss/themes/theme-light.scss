@@ -1,7 +1,28 @@
 body[data-theme="light"] {
-    @import '../src/scss/light-slider.scss';
- 
-    .slider-tab {
-       background-color: #D7CAAA;
+  @import '../src/scss/light-slider.scss';
+
+  .card{
+    min-height: 600px;
+    max-height: 600px;
+    border: 5px solid #e0e0e0
+  }
+  .slider-tab {
+    background-color: #47B5FF;
+  }
+
+  .buttons {
+    background-color: #e0e0e0;
+    padding-bottom: 5px;
+
+  }
+  header{
+    background-image: url("../../background/BG_light1.jpg");
+    h1 {
+      color: white;
     }
+  }
+}
+
+.title-styles {
+  color: white;
 }

@@ -1,9 +1,10 @@
-import React, { Component } from "react";
-import { Modal } from "react-bootstrap";
+import React, {Component} from "react";
+import {Modal} from "react-bootstrap";
 import AwesomeSlider from "react-awesome-slider";
 import AwesomeSliderStyles from "../scss/light-slider.scss";
 import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
+
 class ProjectDetailsModal extends Component {
   render() {
     if (this.props.data) {
@@ -15,17 +16,17 @@ class ProjectDetailsModal extends Component {
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
           return (
-            <li className="list-inline-item mx-3" key={i}>
+              <li className="list-inline-item mx-3" key={i}>
               <span>
                 <div className="text-center">
-                  <i className={icons.class} style={{ fontSize: "300%" }}>
-                    <p className="text-center" style={{ fontSize: "30%" }}>
+                  <i className={icons.class} style={{fontSize: "300%"}}>
+                    <p className="text-center" style={{fontSize: "30%"}}>
                       {icons.name}
                     </p>
                   </i>
                 </div>
               </span>
-            </li>
+              </li>
           );
         });
         if (this.props.data.images) {
@@ -36,64 +37,62 @@ class ProjectDetailsModal extends Component {
       }
     }
     return (
-      <Modal
-        {...this.props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-        className="modal-inside"
-      >
+        <Modal
+            {...this.props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+            className="modal-inside"
+        >
         <span onClick={this.props.onHide} className="modal-close">
           <i className="fas fa-times fa-3x close-icon"/>
         </span>
-        <div className="col-md-12">
-          <div className="col-md-10 mx-auto" style={{ paddingBottom: "50px" }}>
-            <div className="slider-tab">
-              <div className="buttons">
-                <div className="closedown">
+          <div className="col-md-12">
+            <div className="col-md-10 mx-auto" >
+                <div className="buttons"style={{"paddingTop": "10px"}}>
+                        <div className="closedown">
+                            <button className="closebutton" ref="/#"/>
+                        </div>
+                        <div className="minimizedown">
+                            <button className="minimizebutton" ref="/#"/>
+                        </div>
+                        <div className="zoomout">
+                            <button className="zoombutton" ref="/#"/>
+                        </div>
+                </div>
+              <AwesomeSlider
+                  cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
+                  animation="scaleOutAnimation"
+                  className="slider-image"
+              >
+                {img}
+              </AwesomeSlider>
 
-                  <a className="closebutton" href="/#"/>
-                </div>
-                <div className="minimizedown">
-                  <a className="minimizebutton" href="/#"/>
-                </div>
-                <div className="zoomout">
-                  <a className="zoombutton" href="/#"/>
-                </div>
+            </div>
+            <div className="col-md-10 mx-auto">
+              <h3 style={{padding: "5px 5px 0 5px"}}>
+                {title}
+                {url ? (
+                    <a
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-href"
+                    >
+                      <i
+                          className="fas fa-external-link-alt"
+                          style={{marginLeft: "10px"}}
+                      />
+                    </a>
+                ) : null}
+              </h3>
+              <p className="modal-description">{description}</p>
+              <div className="col-md-12 text-center">
+                <ul className="list-inline mx-auto">{tech}</ul>
               </div>
             </div>
-            <AwesomeSlider
-              cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
-              animation="scaleOutAnimation"
-              className="slider-image"
-            >
-              {img}
-            </AwesomeSlider>
           </div>
-          <div className="col-md-10 mx-auto">
-            <h3 style={{ padding: "5px 5px 0 5px" }}>
-              {title}
-              {url ? (
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="link-href"
-                >
-                  <i
-                    className="fas fa-external-link-alt"
-                    style={{ marginLeft: "10px" }}
-                  ></i>
-                </a>
-              ) : null}
-            </h3>
-            <p className="modal-description">{description}</p>
-            <div className="col-md-12 text-center">
-              <ul className="list-inline mx-auto">{tech}</ul>
-            </div>
-          </div>
-        </div>
-      </Modal>
+        </Modal>
     );
   }
 }

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
+import mysqlIcon from "@iconify/icons-logos/mysql";
 import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
+import nodejsIcon from "@iconify/icons-logos/nodejs";
 
 class About extends Component {
   render() {
@@ -12,7 +12,7 @@ class About extends Component {
     if (this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
       var hello = this.props.resumeBasicInfo.description_header;
-      var about = this.props.resumeBasicInfo.description;
+      /* var about = this.props.resumeBasicInfo.description; */
     }
 
     return (
@@ -31,7 +31,7 @@ class About extends Component {
                       alt="Avatar placeholder"
                   />
                   <Icon
-                      icon={angularIcon}
+                      icon={mysqlIcon}
                       style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
@@ -39,30 +39,28 @@ class About extends Component {
                       style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                      icon={vueIcon}
+                      icon={nodejsIcon}
                       style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
                 </div>
               </div>
 
-              <div className="col-md-8 center">
+              <div className="col-md-8 center" >
                 <div className="col-md-10">
+
                   <div className="card">
-                    <div className="card-header">
                       <div className="buttons">
                         <div className="closedown">
-
-                          <a className="closebutton" href="/#"/>
+                          <button className="closebutton" ref="/#"/>
                         </div>
                         <div className="minimizedown">
-                          <a className="minimizebutton" href="/#"/>
+                          <button className="minimizebutton" ref="/#"/>
                         </div>
                         <div className="zoomout">
-                          <a className="zoombutton" href="/#"/>
+                          <button className="zoombutton" ref="/#"/>
                         </div>
                       </div>
-                    </div>
                     <div
                         className="card-body font-trebuchet text-justify ml-3 mr-3"
                         style={{
@@ -75,7 +73,18 @@ class About extends Component {
                       <span className="wave">{hello} :) </span>
                       <br />
                       <br />
-                      {about}
+                      I have worked in Java, Javascript and Python aswell as Node.js and Django Framework and other Frameworks  like React.js, PHP.
+                      <br/>
+                      <br/>
+                      My field of Interest's are building new Web Technologies and Products and also in areas related to Fullstack Development.
+                      My field of Interest's are building new Web Technologies and Products and also in areas related to Fullstack Development.
+                      My field of Interest's are building new Web Technologies and Products and also in areas related to Fullstack Development.
+                      My field of Interest's are building new Web Technologies and Products and also in areas related to Fullstack Development.
+                      My field of Interest's are building new Web Technologies and Products and also in areas related to Fullstack Development.
+                      My field of Interest's are building new Web Technologies and Products and also in areas related to Fullstack Development.
+                      My field of Interest's are building new Web Technologies and Products and also in areas related to Fullstack Development.
+                      My field of Interest's are building new Web Technologies and Products and also in areas related to Fullstack Development.
+
                     </div>
                   </div>
                 </div>
