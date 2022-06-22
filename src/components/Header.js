@@ -50,7 +50,12 @@ class Header extends Component {
                             data-icon="twemoji:owl"
                             data-inline="false"
                             style={{
-                                display: "block", height: "100%", fontSize: 25, textAlign: "end", marginLeft: "20px", color: "#353239",
+                                display: "block",
+                                height: "100%",
+                                fontSize: 25,
+                                textAlign: "end",
+                                marginLeft: "20px",
+                                color: "#353239",
                             }}
                         />
                     }
@@ -60,7 +65,12 @@ class Header extends Component {
                             data-icon="noto-v1:sun-with-face"
                             data-inline="false"
                             style={{
-                                display: "block",height: "100%", fontSize: 25, textAlign: "end", marginLeft: "10px", color: "#353239",
+                                display: "block",
+                                height: "100%",
+                                fontSize: 25,
+                                textAlign: "end",
+                                marginLeft: "10px",
+                                color: "#353239",
                             }}
                         />
                     }
@@ -77,7 +87,7 @@ class Header extends Component {
                             <div className="title-container">
                                 <HeaderTitleTypeAnimation/>
                             </div>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </header>

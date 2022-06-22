@@ -9,4 +9,4 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 window.$primaryLanguage = 'en';
 window.$primaryLanguageIconId = 'primary-lang-icon';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
