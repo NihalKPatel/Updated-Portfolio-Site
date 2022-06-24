@@ -124,4 +124,17 @@ body[data-theme="dark"] {
   .close-icon {
     color: white;
   }
+  .contact__button {
+    border: none;
+    border-radius: .25rem;
+    color: #212121;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .contact__input {
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--accent-700);
+    background-color: #2f2f2f;
+  }
 }

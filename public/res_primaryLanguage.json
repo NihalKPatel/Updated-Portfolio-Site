@@ -85,38 +85,36 @@
   ],
   "experience": [
     {
-      "company": "DefOpenSource",
-      "title": "Front-End Developer",
-      "years": "10.2019 - present",
+      "company": "Spectreum",
+      "title": "Intern Junior Developer",
+      "years": "6.2022 - present",
       "mainTech": [
-        "Angular 8/9/10"
+        "PHP"
       ],
+      "iconName": "fa-brands fa-php",
       "technologies": [
-        "REST API",
-        "RxJS",
+        "PHP",
+        "NodeJS",
         "JavaScript",
-        "Bootstrap",
-        "MDBootstrap",
-        "EF Core",
-        ".NET Core",
-        "SignalR",
-        "Angular Material"
+        "React",
+        "Api"
       ]
     },
     {
-      "company": "Serros Solutions",
-      "title": "Intern",
-      "years": "01.2018 - 09.2019",
+      "company": "OnFinality",
+      "title": "Intern Junior Developer",
+      "years": "5.2021 - 8.2021",
       "mainTech": [
-        "Angular 7/8"
+        "Golang"
       ],
+      "iconName": "devicon-go-original-wordmark",
       "technologies": [
-        "RxJS",
-        "Django",
-        "PHP",
-        "JavaScript",
-        "DHTMLX Gantt"
+        "Go",
+        "Terraform",
+        "Api"
       ]
     }
+  ],
+  "contact": [
   ]
 }

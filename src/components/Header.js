@@ -39,42 +39,56 @@ class Header extends Component {
                 <Switch
                     checked={this.state.checked}
                     onChange={this.onThemeSwitchChange}
-                    offColor="#bdc9ef"
-                    onColor="#353535"
+                    offColor="rgba(255, 0, 0, 0.4)"
+                    onColor="rgba(255, 0, 0, 0.4)"
+                    onHandleColor="rgba(255, 0, 0, 0.4)"
+                    offHandleColor="rgba(255, 0, 0, 0.4)"
+                    boxShadow="rgba(255, 0, 0, 0.4)"
+                    activeBoxShadow="rgba(255, 0, 0, 0.4)"
                     className="react-switch theme-switch"
-                    width={90}
-                    height={40}
+                    width={70}
+                    height={30}
                     uncheckedIcon={
-                        <span
-                            className="iconify"
-                            data-icon="twemoji:owl"
-                            data-inline="false"
-                            style={{
-                                display: "block",
-                                height: "100%",
-                                fontSize: 25,
-                                textAlign: "end",
-                                marginLeft: "20px",
-                                color: "#353239",
-                            }}
-                        />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="100%"
+                            height="100%"
+
+                            viewBox="0 0 24 24"
+                            fill="white"
+                            stroke="white"
+                        >
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
                     }
                     checkedIcon={
-                        <span
-                            className="iconify"
-                            data-icon="noto-v1:sun-with-face"
-                            data-inline="false"
-                            style={{
-                                display: "block",
-                                height: "100%",
-                                fontSize: 25,
-                                textAlign: "end",
-                                marginLeft: "10px",
-                                color: "#353239",
-                            }}
-                        />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="100%"
+                            height="100%"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+
+                            style={{transform: "rotate(40deg)"}}
+                        >
+                            <mask id="mask">
+                                <rect x="0" y="0" width="100%" height="100%" fill="white"/>
+                                <circle cx="12" cy="4" r="9" fill="black"/>
+                            </mask>
+                            <circle fill="white" cx="12" cy="12" r="9" mask="url(#mask)"/>
+
+                        </svg>
+
                     }
-                    id="icon-switch"
                 />
                 <div className="row" style={{height: '100%'}}>
                     <div className="col-md-12 aligner">
